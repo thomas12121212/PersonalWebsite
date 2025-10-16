@@ -3,10 +3,14 @@ export default function Home() {
       <>
           <main>
               <div className="paragraph">
-                  <p>Hi,
-                      <br></br> My name is Thomas Watchman.
-                      <br></br> Thanks for visiting
-                      <br></br> Connect with me here
+                  <p> Welcome <br></br>
+                      My name is Thomas Watchman. My goal is to help build a positive,
+                      human-based AI future, which I call Human 3.0.
+                      In order to do that, I am building AI products
+                      that upgrade people and organizations—rather than try to replace them.
+                      <br></br>Thanks for visiting<br></br>
+                      Connect
+                      <br></br>Connect with me here
                       Read <a href="#">what I’m working on</a>, browse <a href="#">projects</a>,
                       or check the <a href="#">archive</a>.
                   </p>

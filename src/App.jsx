@@ -13,13 +13,12 @@ export default function App() {
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/projects">Projects</NavLink>
                 <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/personal">Personal</NavLink>
             </nav>
         </header>
-
-        <main className="main">
-            <Outlet/>
-        </main>
-
+            <main className="main">
+                <Outlet/>
+            </main>
         <footer className="footer">
             © {new Date().getFullYear()} Thomas Watchman
         </footer>

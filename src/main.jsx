@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
+import Personal from './pages/Personal.jsx'
 import './index.css'
 
 // Works at "/" in dev and "/PersonalWebsite/" in prod
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
         { index: true, element: <Home /> },
         { path: 'projects', element: <Projects /> },
         { path: 'contact', element: <Contact /> },
+          { path: 'personal', element: <Personal /> },
       ],
     },
   ],

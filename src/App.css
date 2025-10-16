@@ -14,7 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: blanchedalmond;
+  background-color: ivory;
   z-index: 1000;
 }
 
@@ -24,6 +24,7 @@
 
 .main{
   padding-top: 3rem;
+  font-size: 1.25rem;
 }
 
 
@@ -36,3 +37,10 @@ p {
   padding-left: 15rem;
 }
 
+.nav-logo:hover {
+  color: darkgray;
+}
+
+.nav-links> :hover{
+  color: darkgray ;
+}
