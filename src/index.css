@@ -5,22 +5,29 @@
   font-size: 20px;
 
   color-scheme: dark;
-  color: black;
-  background-color: blanchedalmond;
+  background-color: floralwhite;
+  color: black;/* hairline rules */
 
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: blanchedalmond;
-  border-bottom: 1px solid ;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+body{
+  margin: 0;
+  padding: 0;
 }
+
+h1, h2, h3 {
+  margin-top: 60px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+.paragraph {
+  text-align: left;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+
 /* Logo (your name, top left) */
 .nav-logo {
   font-weight: 700;
@@ -34,6 +41,7 @@
   display: flex;
   gap: 1.5rem;
 }
+
 
 /* Link styling */
 .nav-links a {

@@ -5,6 +5,25 @@
   text-align: center;
 }
 
+.navbar {
+  position: fixed;
+  width: 60%;
+  margin-left: 20%;
+  top: 0;
+  left: 0;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: floralwhite;
+  z-index: 1000;
+}
+.icon-row {
+  gap: 22px;
+  align-items: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -33,10 +52,5 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
+
