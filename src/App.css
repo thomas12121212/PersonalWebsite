@@ -22,9 +22,12 @@
   padding: 1rem 1rem;
 }
 
-.main{
+.view{
   padding-top: 3rem;
   font-size: 1.25rem;
+  width: 80%;
+  padding-left: 15rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -33,10 +36,41 @@ p {
 }
 
 .paragraph {
-  width: 80%;
-  padding-left: 15rem;
+
+}
+.fa-brands{
+  font-size: 40px;
+  color: darkgray;
+}
+.fa-solid{
+  font-size: 40px;
+  color: darkgray;
+}
+.sectionTitle {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
+.icon-row{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.footer{
+  height: 2rem;
+  display:flex;
+  justify-content: center;
+}
+
+/* hover */
+.fa-brands:hover{
+  color: black;
+}
+.fa-solid:hover{
+    color: black;
+}
 .nav-logo:hover {
   color: darkgray;
 }
@@ -44,3 +78,6 @@ p {
 .nav-links> :hover{
   color: darkgray ;
 }
+
+
+
