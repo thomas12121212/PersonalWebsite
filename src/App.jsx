@@ -4,22 +4,25 @@ import './App.css'
 export default function App() {
   return (
     <div className="app">
-      <header className="header">
-        <a href="/" className="logo">Thomas Watchman</a>
-        <nav className="nav">
-          <NavLink to="/" end>Home</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
-        </nav>
-      </header>
+        <header className="navbar">
+            <NavLink to="/" className="nav-logo">
+                Thomas Watchman
+            </NavLink>
 
-      <main className="main">
-        <Outlet />
-      </main>
+            <nav className="nav-links">
+                <NavLink to="/" end>Home</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
+            </nav>
+        </header>
 
-      <footer className="footer">
-        © {new Date().getFullYear()} Thomas Watchman
-      </footer>
+        <main className="main">
+            <Outlet/>
+        </main>
+
+        <footer className="footer">
+            © {new Date().getFullYear()} Thomas Watchman
+        </footer>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 :root {
-  font-family: "Courier New", serif;
-  line-height: 1.5;
+  font-family: "Courier New", "serif";
+  line-height: 1;
   font-weight: 400;
   font-size: 20px;
 
@@ -10,3 +10,56 @@
 
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: blanchedalmond;
+  border-bottom: 1px solid ;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/* Logo (your name, top left) */
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #222;
+  text-decoration: none;
+}
+
+/* Right-aligned links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Link styling */
+.nav-links a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #007acc;
+}
+
+/* Highlight active link */
+.nav-links a.active {
+  color: darkblue;
+}
+
+/* Make it look good on smaller screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 0.5rem;
+  }
+}
