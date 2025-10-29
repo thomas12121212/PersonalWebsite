@@ -1,17 +1,14 @@
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
       <>
           <div className="view">
               <div className="paragraph">
-                  <p> Welcome <br></br>
-                      My name is Thomas Watchman. My goal is to help build a positive,
-                      human-based AI future, which I call Human 3.0.
-                      In order to do that, I am building AI products
-                      that upgrade people and organizations—rather than try to replace them.
-                      I’m Thomas Watchman, a computer scientist and builder focused on creating technology that strengthens, not replaces, human potential. My goal is to help shape a future where artificial intelligence and people work side by side to amplify creativity, problem-solving, and connection — a vision I call Human 3.0. I’m passionate about developing AI systems that are transparent, ethical, and deeply human-centered, using my background in programming, data analysis, and machine learning to turn ideas into impactful tools. Beyond code, I’m fascinated by how technology shapes society — from how we learn and collaborate to how we find meaning in the digital age. This website is a place to share my projects, experiments, and thoughts as I explore what it means to build technology for people — not just for progress.
-                      <br></br>Thanks for visiting<br></br>
-                      Read <a href="#">what I’m working on</a>, browse <a href="#">projects</a>,
-                      or check the <a href="#">archive</a>
+                  <p> Welcome, <br></br><br></br>
+                      My name is Thomas Watchman, and this is my personal site. I am a computer scientist with interest
+                      in cybersecurity, machine learning and quantitative analysis Here I have documented projects,
+                      interests, and personal achievements. Read <Link to="./projects">what I'm up to</Link>, browse <Link to="./projects">what I'm working on</Link>,
+                      or get to <Link to="./personal">know me better</Link><br></br>
                       <br></br> Thanks for visiting, <br></br> - Thomas
                   </p>
                   <div className="sectionTitle">

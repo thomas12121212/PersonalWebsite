@@ -2,13 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
+import Portfolio from './pages/Portfolio.jsx'
 import Home from './pages/Home.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 import Personal from './pages/Personal.jsx'
 import './index.css'
 
-// Works at "/" in dev and "/PersonalWebsite/" in prod
 const router = createBrowserRouter(
   [
     {
@@ -17,8 +17,9 @@ const router = createBrowserRouter(
       children: [
         { index: true, element: <Home /> },
         { path: 'projects', element: <Projects /> },
+        { path: 'projects/portfolio', element: <Portfolio /> }, // <- add this
         { path: 'contact', element: <Contact /> },
-          { path: 'personal', element: <Personal /> }
+        { path: 'personal', element: <Personal /> }
       ],
     },
   ],
