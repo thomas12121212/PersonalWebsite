@@ -1,9 +1,6 @@
 export default function Home() {
   return (
       <>
-          <head>
-              <script src="https://kit.fontawesome.com/41064700ed.js" crossOrigin="anonymous"></script>
-          </head>
           <div className="view">
               <div className="paragraph">
                   <p> Welcome <br></br>

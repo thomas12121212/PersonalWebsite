@@ -1,8 +1,9 @@
 export default function Personal() {
   return (
       <>
-          <h1>Personal</h1>
-
+          <div className="view">
+              <h1>Personal</h1>
+          </div>
       </>
   )
 }

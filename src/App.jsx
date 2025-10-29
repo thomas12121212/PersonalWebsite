@@ -12,8 +12,8 @@ export default function App() {
             <nav className="nav-links">
                 <NavLink to="/" end>Home</NavLink>
                 <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
                 <NavLink to="/personal">Personal</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </nav>
         </header>
             <main className="main">
