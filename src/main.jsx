@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import Portfolio from './pages/Portfolio.jsx'
 import Home from './pages/Home.jsx'
+import TfsaPortfolio from './tfsa/TfsaPortfolio.jsx'
 import Projects from './pages/Projects.jsx'
 import Contact from './pages/Contact.jsx'
 import Personal from './pages/Personal.jsx'
@@ -17,8 +17,8 @@ const router = createBrowserRouter(
       children: [
         { index: true, element: <Home /> },
         { path: 'projects', element: <Projects /> },
-        { path: 'projects/portfolio', element: <Portfolio /> }, // <- add this
-        { path: 'contact', element: <Contact /> },
+        { path: "projects/tfsa", element: <TfsaPortfolio /> },
+          { path: 'contact', element: <Contact /> },
         { path: 'personal', element: <Personal /> }
       ],
     },

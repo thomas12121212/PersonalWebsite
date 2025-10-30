@@ -1,0 +1,38 @@
+.pf-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: #1b1b1b;
+  background: #fdfdfb;
+}
+.pf-sub { opacity: 0.7; }
+.pf-alert {
+  background: #fff3f3;
+  border: 1px solid #ffd4d4;
+  color: #7a1010;
+  padding: 10px;
+  border-radius: 8px;
+}
+.pf-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.pf-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+}
+.pf-card-label { font-size: 0.85rem; opacity: 0.75; }
+.pf-card-value { font-weight: 600; font-size: 1.5rem; }
+.pf-chart-section {
+  margin-top: 2rem;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}

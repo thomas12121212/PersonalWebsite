@@ -5,10 +5,10 @@ export default function Home() {
           <div className="view">
               <div className="paragraph">
                   <p> Welcome, <br></br><br></br>
-                      My name is Thomas Watchman, and this is my personal site. I am a computer scientist with interest
-                      in cybersecurity, machine learning and quantitative analysis Here I have documented projects,
+                      My name is Thomas, and this is my personal website. I am a computer scientist with interest
+                      in cybersecurity, machine learning, and quantitative analysis. Here I have documented projects,
                       interests, and personal achievements. Read <Link to="./projects">what I'm up to</Link>, browse <Link to="./projects">what I'm working on</Link>,
-                      or get to <Link to="./personal">know me better</Link><br></br>
+                      or get to <Link to="./personal">know me better.</Link><br></br>
                       <br></br> Thanks for visiting, <br></br> - Thomas
                   </p>
                   <div className="sectionTitle">
