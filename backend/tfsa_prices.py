@@ -1,57 +1,34 @@
-# tfsa_prices.py
-import yfinance as yf
-import json
+# backend/tfsa_prices.py
+import yfinance as yf, json, os
 from datetime import datetime
 
-# 👇 Edit these tickers to match your TFSA holdings
-HOLDINGS = {
-    "VFV.TO": 25,   # Vanguard S&P 500 ETF
-    "XIC.TO": 40,   # iShares Core TSX Capped Composite
-    "BNS.TO": 20,   # Bank of Nova Scotia
-    "VCN.TO": 15,   # Vanguard FTSE Canada All Cap
-}
+HOLDINGS = {"VFV.TO":25, "XIC.TO":40, "BNS.TO":20, "VCN.TO":15}
 
 def get_live_prices(symbols):
     tickers = yf.Tickers(" ".join(symbols))
-    data = {}
+    out = {}
     for sym, t in tickers.tickers.items():
         try:
-            price = t.info.get("regularMarketPrice")
-            if price:
-                data[sym] = price
-        except Exception as e:
-            print(f"Error fetching {sym}: {e}")
-    return data
+            p = t.fast_info.get("lastPrice") or t.info.get("regularMarketPrice")
+            if p: out[sym] = float(p)
+        except Exception: pass
+    return out
 
 def main():
     prices = get_live_prices(list(HOLDINGS.keys()))
-    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    results = []
-    total_value = 0
-    for sym, shares in HOLDINGS.items():
+    rows, total = [], 0.0
+    for sym, sh in HOLDINGS.items():
         price = prices.get(sym)
-        value = shares * price if price else 0
-        total_value += value
-        results.append({
-            "symbol": sym,
-            "shares": shares,
-            "price": price,
-            "value": round(value, 2)
-        })
-
-    output = {
-        "timestamp": now,
-        "holdings": results,
-        "total_value": round(total_value, 2)
-    }
-
-    # print to console AND write to a JSON file (for your React site)
-    print(json.dumps(output, indent=2))
-    with open("tfsa_portfolio.json", "w") as f:
-        json.dump(output, f, indent=2)
-
-    print(f"\n✅ Updated tfsa_portfolio.json at {now}")
+        value = round((price or 0)*sh, 2)
+        total += value
+        rows.append({"symbol":sym, "shares":sh, "price":price, "value":value})
+    data = {"timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "holdings": rows, "total_value": round(total, 2)}
+    out_path = os.path.join("public","data")
+    os.makedirs(out_path, exist_ok=True)
+    with open(os.path.join(out_path, "tfsa_portfolio.json"), "w") as f:
+        json.dump(data, f, indent=2)
+    print("Wrote public/data/tfsa_portfolio.json")
 
 if __name__ == "__main__":
     main()
