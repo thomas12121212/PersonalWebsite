@@ -1,7 +1,7 @@
 name: Update TFSA JSON
 on:
   schedule:
-    - cron: "0 13 * * *"    # every day at 13:00 UTC ~ 10am Halifax (+/- DST)
+    - cron: "0 15 05 * *"    # every day at 13:00 UTC ~ 10am Halifax (+/- DST)
   workflow_dispatch: {}
 permissions:
   contents: write
