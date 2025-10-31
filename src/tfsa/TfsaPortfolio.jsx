@@ -98,7 +98,7 @@ export default function TfsaPortfolio() {
       {/* Allocation pie */}
       <div className="pf-chart-section">
         <h2>Current Allocation</h2>
-        <ResponsiveContainer width="100%" height={300}>
+        <ResponsiveContainer width="100%" height={360}>
           <PieChart>
             <Pie
               data={rows}
@@ -122,7 +122,7 @@ export default function TfsaPortfolio() {
       {/* Growth line (placeholder) */}
       <div className="pf-chart-section">
         <h2>Portfolio Growth (placeholder)</h2>
-        <ResponsiveContainer width="100%" height={320}>
+        <ResponsiveContainer width="100%" height={360}>
           <LineChart data={history}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="date" />

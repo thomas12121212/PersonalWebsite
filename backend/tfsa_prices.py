@@ -1,34 +1,46 @@
 # backend/tfsa_prices.py
+# cd backend
+# source ../.venv/bin/activate
+# python tfsa_prices.py
+from pathlib import Path
 import yfinance as yf, json, os
 from datetime import datetime
 
-HOLDINGS = {"VFV.TO":25, "XIC.TO":40, "BNS.TO":20, "VCN.TO":15}
+HOLDINGS = {"BNS":185, "CM":30, "TSLA":50, "GOOG":20}
 
-def get_live_prices(symbols):
+def get_prices(symbols):
     tickers = yf.Tickers(" ".join(symbols))
     out = {}
     for sym, t in tickers.tickers.items():
         try:
-            p = t.fast_info.get("lastPrice") or t.info.get("regularMarketPrice")
-            if p: out[sym] = float(p)
-        except Exception: pass
+            out[sym] = float(t.fast_info.get("lastPrice") or t.info.get("regularMarketPrice"))
+        except Exception:
+            pass
     return out
 
 def main():
-    prices = get_live_prices(list(HOLDINGS.keys()))
+    # repo root = parent of /backend
+    ROOT = Path(__file__).resolve().parents[1]
+    out_dir = ROOT / "public" / "data"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / "tfsa_portfolio.json"
+
+    prices = get_prices(HOLDINGS.keys())
     rows, total = [], 0.0
     for sym, sh in HOLDINGS.items():
-        price = prices.get(sym)
-        value = round((price or 0)*sh, 2)
-        total += value
-        rows.append({"symbol":sym, "shares":sh, "price":price, "value":value})
-    data = {"timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "holdings": rows, "total_value": round(total, 2)}
-    out_path = os.path.join("public","data")
-    os.makedirs(out_path, exist_ok=True)
-    with open(os.path.join(out_path, "tfsa_portfolio.json"), "w") as f:
-        json.dump(data, f, indent=2)
-    print("Wrote public/data/tfsa_portfolio.json")
+        p = prices.get(sym)
+        v = round((p or 0) * sh, 2)
+        total += v
+        rows.append({"symbol": sym, "shares": sh, "price": p, "value": v})
+
+    data = {
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "holdings": rows,
+        "total_value": round(total, 2),
+    }
+
+    out_file.write_text(json.dumps(data, indent=2))
+    print(f"✅ Wrote {out_file}")
 
 if __name__ == "__main__":
     main()
