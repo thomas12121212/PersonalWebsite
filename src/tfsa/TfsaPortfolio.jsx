@@ -56,10 +56,9 @@ export default function TfsaPortfolio() {
 
   return (
     <div className="pf-wrap">
-      <h1>My TFSA Portfolio</h1>
+      <h1>My Portfolio</h1>
       <p className="pf-sub">
-        Data loaded from <code>public/data/tfsa_portfolio.json</code>. Update it with your Python
-        script or a GitHub Action.
+        Data loaded from <code>public/data/tfsa_portfolio.json</code>.
       </p>
 
       {error && <div className="pf-alert">{error}</div>}

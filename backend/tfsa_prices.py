@@ -6,7 +6,19 @@ from pathlib import Path
 import yfinance as yf, json, os
 from datetime import datetime
 
-HOLDINGS = {"BNS":185, "CM":30, "TSLA":50, "GOOG":20}
+HOLDINGS = {
+    "NVDA": 2,
+    "PLTR": 1,
+    "TD": 20,
+    "TSLA": 2.25,
+    "VOO": 10,
+    "AMZN": 2,
+    "BNS": 150,
+    "CM": 20,
+    "ENB": 5,
+    "GOOG": 2,
+    "META": 2
+}
 
 def get_prices(symbols):
     tickers = yf.Tickers(" ".join(symbols))
