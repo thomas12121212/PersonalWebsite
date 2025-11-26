@@ -33,7 +33,7 @@ export default function QuickCash() {
           {/* Video */}
           <div className="qc-video">
               <iframe
-                  src="https://youtu.be/T6bnnNfbwEs"
+                  src="https://www.youtube.com/watch?v=T6bnnNfbwEs"
                   allowFullScreen
               ></iframe>
           </div>
