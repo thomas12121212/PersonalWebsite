@@ -23,19 +23,20 @@ export default function QuickCash() {
                       maintainable.
                   </p>
               </div>
-          </div>
-          <div className="qc-screenshots">
-              <img src="/path/to/screen1.png" alt="QuickCash Screen 1"/>
-              <img src="/path/to/screen2.png" alt="QuickCash Screen 2"/>
-              <img src="/path/to/screen3.png" alt="QuickCash Screen 3"/>
-          </div>
 
-          {/* Video */}
-          <div className="qc-video">
-              <iframe
-                  src="https://www.youtube.com/watch?v=T6bnnNfbwEs"
-                  allowFullScreen
-              ></iframe>
+              <div className="qc-screenshots">
+                  <img src="/path/to/screen1.png" alt="QuickCash Screen 1"/>
+                  <img src="/path/to/screen2.png" alt="QuickCash Screen 2"/>
+                  <img src="/path/to/screen3.png" alt="QuickCash Screen 3"/>
+              </div>
+
+              {/* Video */}
+              <div className="qc-video">
+                  <iframe
+                      src="https://www.youtube.com/embed/T6bnnNfbwEs"
+                      allowFullScreen
+                  ></iframe>
+              </div>
           </div>
       </>
   );
