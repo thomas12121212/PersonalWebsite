@@ -15,22 +15,24 @@
 }
 
 .qc-screenshots {
+  width: 100%;
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
   margin: 2rem 0;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .qc-screenshots img {
-  width: 200px;
+  width: 100%;
   border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  box-shadow: 0 0 12px rgba(0,0,0,0.35);
 }
+
 
 .qc-video iframe {
   width: 100%;
-  height: 400px;
+  height: 25rem;
   border-radius: 12px;
   margin: 2rem 0;
 }
