@@ -1,30 +1,72 @@
 {
-  "timestamp": "2025-11-05 15:14:01",
+  "timestamp": "2025-12-05 15:14:25",
   "holdings": [
     {
-      "symbol": "BNS",
-      "shares": 185,
-      "price": 65.8499984741211,
-      "value": 12182.25
+      "symbol": "NVDA",
+      "shares": 2,
+      "price": 183.0301055908203,
+      "value": 366.06
     },
     {
-      "symbol": "CM",
-      "shares": 30,
-      "price": 83.03500366210938,
-      "value": 2491.05
+      "symbol": "PLTR",
+      "shares": 1,
+      "price": 180.86000061035156,
+      "value": 180.86
+    },
+    {
+      "symbol": "TD",
+      "shares": 20,
+      "price": 87.6500015258789,
+      "value": 1753.0
     },
     {
       "symbol": "TSLA",
-      "shares": 50,
-      "price": 445.6099853515625,
-      "value": 22280.5
+      "shares": 2.25,
+      "price": 456.0,
+      "value": 1026.0
+    },
+    {
+      "symbol": "VOO",
+      "shares": 10,
+      "price": 632.7199096679688,
+      "value": 6327.2
+    },
+    {
+      "symbol": "AMZN",
+      "shares": 2,
+      "price": 230.71499633789062,
+      "value": 461.43
+    },
+    {
+      "symbol": "BNS",
+      "shares": 150,
+      "price": 70.8499984741211,
+      "value": 10627.5
+    },
+    {
+      "symbol": "CM",
+      "shares": 20,
+      "price": 90.80999755859375,
+      "value": 1816.2
+    },
+    {
+      "symbol": "ENB",
+      "shares": 5,
+      "price": 48.167701721191406,
+      "value": 240.84
     },
     {
       "symbol": "GOOG",
-      "shares": 20,
-      "price": 283.8900146484375,
-      "value": 5677.8
+      "shares": 2,
+      "price": 322.3699951171875,
+      "value": 644.74
+    },
+    {
+      "symbol": "META",
+      "shares": 2,
+      "price": 668.22998046875,
+      "value": 1336.46
     }
   ],
-  "total_value": 42631.6
+  "total_value": 24780.29
 }
