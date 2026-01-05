@@ -1,72 +1,72 @@
 {
-  "timestamp": "2025-12-05 15:14:25",
+  "timestamp": "2026-01-05 15:16:35",
   "holdings": [
     {
       "symbol": "NVDA",
       "shares": 2,
-      "price": 183.0301055908203,
-      "value": 366.06
+      "price": 190.16000366210938,
+      "value": 380.32
     },
     {
       "symbol": "PLTR",
       "shares": 1,
-      "price": 180.86000061035156,
-      "value": 180.86
+      "price": 174.218505859375,
+      "value": 174.22
     },
     {
       "symbol": "TD",
       "shares": 20,
-      "price": 87.6500015258789,
-      "value": 1753.0
+      "price": 95.1500015258789,
+      "value": 1903.0
     },
     {
       "symbol": "TSLA",
       "shares": 2.25,
-      "price": 456.0,
-      "value": 1026.0
+      "price": 455.1300048828125,
+      "value": 1024.04
     },
     {
       "symbol": "VOO",
       "shares": 10,
-      "price": 632.7199096679688,
-      "value": 6327.2
+      "price": 632.2899780273438,
+      "value": 6322.9
     },
     {
       "symbol": "AMZN",
       "shares": 2,
-      "price": 230.71499633789062,
-      "value": 461.43
+      "price": 232.7899932861328,
+      "value": 465.58
     },
     {
       "symbol": "BNS",
       "shares": 150,
-      "price": 70.8499984741211,
-      "value": 10627.5
+      "price": 74.56999969482422,
+      "value": 11185.5
     },
     {
       "symbol": "CM",
       "shares": 20,
-      "price": 90.80999755859375,
-      "value": 1816.2
+      "price": 91.72000122070312,
+      "value": 1834.4
     },
     {
       "symbol": "ENB",
       "shares": 5,
-      "price": 48.167701721191406,
-      "value": 240.84
+      "price": 46.0890007019043,
+      "value": 230.45
     },
     {
       "symbol": "GOOG",
       "shares": 2,
-      "price": 322.3699951171875,
-      "value": 644.74
+      "price": 318.82501220703125,
+      "value": 637.65
     },
     {
       "symbol": "META",
       "shares": 2,
-      "price": 668.22998046875,
-      "value": 1336.46
+      "price": 663.4401245117188,
+      "value": 1326.88
     }
   ],
-  "total_value": 24780.29
+  "total_value": 25484.94
 }
